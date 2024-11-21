@@ -1,0 +1,31 @@
+aid: air-force-reserve
+name: Air Force Reserve
+description: >-
+  Looking for a way to serve your country & maintain your civilian career? The
+  Air Force Reserve offers the perfect opportunity to balance both.
+type: Index
+position: Consumer
+access: 3rd-Party
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - API
+created: '2024-11-21'
+modified: '2024-11-21'
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/air-force-reserve/refs/heads/main/apis.yml
+specificationVersion: '0.19'
+apis:
+  - aid: air-force-reserve:air-force-reserve
+    name: Air Force Reserve
+    description: >-
+      Looking for a way to serve your country & maintain your civilian career?
+      The Air Force Reserve offers the perfect opportunity to balance both.
+    humanURL: https://www.airforce.com
+    tags:
+      - API
+    properties:
+      - type: Documentation
+        url: https://www.airforce.com
+maintainers:
+  - FN: Kin Lane
+    email: info@apievangelist.com
