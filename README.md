@@ -17,22 +17,7 @@ Looking for a way to serve your country & maintain your civilian career? The Air
 ## Timestamps
 
 - **Created:** 2024-11-21 
-- **Modified:** 2024-11-21 
-
-## APIs
-
-### Air Force Reserve
-Looking for a way to serve your country & maintain your civilian career? The Air Force Reserve offers the perfect opportunity to balance both.
-
-**Human URL:** [https://www.airforce.com](https://www.airforce.com)
-
-#### Tags
-
-- API
-
-#### Properties
-
-- [Documentation](https://www.airforce.com)
+- **Modified:** 2024-12-15 
 
 ## Maintainers
 
