@@ -1,0 +1,118 @@
+vocabulary: "1.0.0"
+
+info:
+  provider: "Air Force Reserve"
+  description: "Taxonomy for Air Force Reserve Command covering reserve member classifications, unit types, career fields, and program types."
+  created: "2026-04-19"
+  modified: "2026-04-19"
+
+operational:
+  apis:
+    - namespace: afrc-website
+      version: "N/A"
+      baseUrl: https://www.afrc.af.mil
+      status: active
+      note: "AFRC does not provide a public developer API. This profile documents data schemas and digital portal resources."
+
+  resources:
+    - name: ReserveMember
+      actions: [enlist, train, deploy, separate]
+      description: "Air Force Reserve member with rank, unit, and specialty"
+    - name: ReserveUnit
+      actions: [activate, deploy, train]
+      description: "Air Force Reserve wing, group, or squadron"
+    - name: CareerOpportunity
+      actions: [list, apply, qualify]
+      description: "Available Air Force Reserve career specialty fields"
+
+  actions:
+    - name: enlist
+      pattern: write
+      description: "Enlist a new reserve member"
+    - name: deploy
+      pattern: write
+      description: "Deploy a unit or individual for active-duty service"
+    - name: list
+      pattern: read
+      description: "List available resources"
+    - name: apply
+      pattern: write
+      description: "Apply for a reserve position or program"
+    - name: qualify
+      pattern: read
+      description: "Check qualification status for a program"
+
+  schemas:
+    personnel:
+      - name: ReserveMember
+        description: "Reserve member personnel record"
+        keyFields: [service_number, rank, afsc, unit, duty_status]
+    units:
+      - name: ReserveUnit
+        description: "AFRC unit record"
+        keyFields: [unit_id, name, location, mission, aircraft]
+    careers:
+      - name: CareerOpportunity
+        description: "Reserve career specialty"
+        keyFields: [afsc_code, title, category, enlistment_bonus]
+
+  enums:
+    dutyStatus:
+      - Traditional Reservist
+      - Active Guard Reserve (AGR)
+      - Individual Mobilization Augmentee (IMA)
+      - Air Reserve Technician (ART)
+    careerCategories:
+      - Aviation
+      - Cyber
+      - Intelligence
+      - Medical
+      - Maintenance
+      - Logistics
+      - Finance
+      - Legal
+      - Chaplain
+    wingsTypes:
+      - Airlift
+      - Fighter
+      - Bomber
+      - Tanker
+      - Special Operations
+      - Intelligence
+
+  authentication:
+    schemes:
+      - type: portal
+        description: "CAC card or myPers login for member self-service"
+
+capability:
+  workflows:
+    - name: "Reserve Recruiting and Enlistment"
+      description: "Support prospective reservists in discovering career opportunities, verifying eligibility, and completing enlistment"
+      personas: [Recruiter, Prospective Reservist]
+      domains: [Military Recruiting, Personnel]
+
+  personas:
+    - id: recruiter
+      name: "Recruiter"
+      description: "Air Force Reserve recruiter assisting prospects with career matching and enlistment"
+    - id: reservist
+      name: "Reserve Member"
+      description: "Current Air Force Reserve member managing career and assignments"
+
+  domains:
+    - name: "Military Recruiting"
+      resources: [CareerOpportunity]
+    - name: "Personnel"
+      resources: [ReserveMember, ReserveUnit]
+
+crossReference:
+  - resource: CareerOpportunity
+    operations: [list, apply, qualify]
+    personas: [Recruiter, Prospective Reservist]
+  - resource: ReserveMember
+    operations: [enlist, train, deploy]
+    personas: [Recruiter, Reserve Member]
+  - resource: ReserveUnit
+    operations: [activate, deploy, train]
+    personas: [Reserve Member]

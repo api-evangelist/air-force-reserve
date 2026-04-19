@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/air-force-reserve/refs/heads/main/json-schema/afrc-reserve-member-schema.json",
+  "title": "ReserveMember",
+  "description": "An Air Force Reserve member record",
+  "type": "object",
+  "properties": {
+    "service_number": {
+      "type": "string",
+      "description": "Military service number or SSAN",
+      "example": "123-45-6789"
+    },
+    "rank": {
+      "type": "string",
+      "description": "Military rank",
+      "example": "Technical Sergeant"
+    },
+    "last_name": {
+      "type": "string",
+      "description": "Member last name",
+      "example": "Smith"
+    },
+    "first_name": {
+      "type": "string",
+      "description": "Member first name",
+      "example": "John"
+    },
+    "unit": {
+      "type": "string",
+      "description": "Assigned reserve unit",
+      "example": "433rd Airlift Wing"
+    },
+    "afsc": {
+      "type": "string",
+      "description": "Air Force Specialty Code (career field)",
+      "example": "1A2X1"
+    },
+    "duty_status": {
+      "type": "string",
+      "description": "Current duty status",
+      "example": "Traditional Reservist"
+    },
+    "enlistment_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date of enlistment",
+      "example": "2020-06-01"
+    }
+  }
+}

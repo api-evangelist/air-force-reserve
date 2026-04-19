@@ -1,0 +1,10 @@
+{
+  "service_number": "123-45-6789",
+  "rank": "Technical Sergeant",
+  "last_name": "Smith",
+  "first_name": "John",
+  "unit": "433rd Airlift Wing",
+  "afsc": "1A2X1",
+  "duty_status": "Traditional Reservist",
+  "enlistment_date": "2020-06-01"
+}

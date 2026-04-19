@@ -1,0 +1,8 @@
+{
+  "unit_id": "433rd AW",
+  "name": "433rd Airlift Wing",
+  "location": "Joint Base San Antonio-Lackland, TX",
+  "mission": "Strategic airlift using C-5M Super Galaxy",
+  "aircraft": "C-5M Super Galaxy",
+  "wing_type": "Airlift"
+}

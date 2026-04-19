@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/air-force-reserve/refs/heads/main/json-structure/afrc-reserve-unit-structure.json",
+  "name": "ReserveUnit",
+  "description": "An Air Force Reserve unit",
+  "type": "object",
+  "properties": {
+    "unit_id": {
+      "type": "string",
+      "description": "Unit designation",
+      "example": "433rd AW"
+    },
+    "name": {
+      "type": "string",
+      "description": "Full unit name",
+      "example": "433rd Airlift Wing"
+    },
+    "location": {
+      "type": "string",
+      "description": "Installation/base name",
+      "example": "Joint Base San Antonio-Lackland, TX"
+    },
+    "mission": {
+      "type": "string",
+      "description": "Primary unit mission",
+      "example": "Strategic airlift using C-5M Super Galaxy"
+    },
+    "aircraft": {
+      "type": "string",
+      "description": "Primary aircraft type",
+      "example": "C-5M Super Galaxy"
+    },
+    "wing_type": {
+      "type": "string",
+      "description": "Wing type classification",
+      "example": "Airlift"
+    }
+  }
+}

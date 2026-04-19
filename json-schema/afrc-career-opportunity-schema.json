@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/air-force-reserve/refs/heads/main/json-schema/afrc-career-opportunity-schema.json",
+  "title": "CareerOpportunity",
+  "description": "An Air Force Reserve career opportunity",
+  "type": "object",
+  "properties": {
+    "afsc_code": {
+      "type": "string",
+      "description": "Air Force Specialty Code",
+      "example": "17DX"
+    },
+    "title": {
+      "type": "string",
+      "description": "Career field title",
+      "example": "Cyber Warfare Operations"
+    },
+    "description": {
+      "type": "string",
+      "description": "Career field description",
+      "example": "Conducts offensive and defensive cyberspace operations"
+    },
+    "category": {
+      "type": "string",
+      "description": "Career category",
+      "example": "Cyber"
+    },
+    "minimum_grade": {
+      "type": "string",
+      "description": "Minimum entry rank/grade",
+      "example": "E-1"
+    },
+    "enlistment_bonus": {
+      "type": "boolean",
+      "description": "Enlistment bonus available",
+      "example": true
+    }
+  }
+}
