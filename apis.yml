@@ -46,6 +46,8 @@ apis:
       type: Portal
       title: myPers Personnel System
 common:
+  - type: DomainSecurity
+    url: security/air-force-reserve-domain-security.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/airforcereserverecruiting
   - name: AFRC Official Website
