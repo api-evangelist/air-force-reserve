@@ -31,7 +31,7 @@ description: The Air Force Reserve (AFRC) is the reserve component of the United
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
-specificationVersion: '0.19'
+specificationVersion: '0.23'
 apis:
   - aid: air-force-reserve:afrc
     name: Air Force Reserve Command
