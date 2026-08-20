@@ -2,6 +2,12 @@ aid: air-force-reserve
 url: https://raw.githubusercontent.com/api-evangelist/air-force-reserve/refs/heads/main/apis.yml
 name: Air Force Reserve
 tags:
+  - Federal-Government
+  - Military
+  - Defense
+  - Air Force
+  - United States Government
+tags_raw:
   - Federal Government
   - Military
   - Defense
@@ -36,6 +42,12 @@ apis:
   - aid: air-force-reserve:afrc
     name: Air Force Reserve Command
     tags:
+    - Military
+    - Defense
+    - Reserve
+    - Federal-Government
+    - Recruiting
+    tags_raw:
     - Military
     - Defense
     - Reserve
