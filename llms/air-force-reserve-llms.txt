@@ -1,0 +1,72 @@
+# Air Force Reserve (AFRC)
+
+> The Air Force Reserve Command (AFRC) is the reserve component of the United States Air
+> Force, headquartered at Robins Air Force Base, Georgia. It provides trained units and
+> individuals available for active duty in time of war, national emergency, or when
+> otherwise authorized by law. Reserve members typically serve one weekend per month and
+> two weeks per year while maintaining civilian careers.
+
+IMPORTANT FOR AGENTS: AFRC publishes NO public developer API, no OpenAPI/AsyncAPI/GraphQL
+contract, no SDKs, no MCP server and no A2A agent card. Verified 2026-08-30 by probing every
+host named in this profile for /openapi.json, /openapi.yaml, /swagger.json, /api-docs,
+/v1/openapi.json, /graphql, /llms.txt and the /.well-known/ discovery set. Nothing was served.
+Do not construct calls against these hosts; they are human-facing web properties only.
+
+Provenance: generated 2026-08-30 by the API Evangelist enrichment pipeline from this repo's
+apis.yml and probe artifacts. Method: generated. Not published by the Air Force Reserve.
+
+## Access notes for automated clients
+
+- www.afrc.af.mil and the wider public .mil web estate (af.mil, dc3.mil, arpc.afrc.af.mil,
+  hqrio.afrc.af.mil) sit behind an Akamai edge policy that returns HTTP 403 "Access Denied"
+  to non-browser clients for every path, including the site root and /robots.txt.
+- www.airforce.com is openly crawlable (robots.txt: "User-Agent: * / Disallow:") and serves
+  a sitemap at https://www.airforce.com/sitemap.xml.
+- www.my.af.mil (Air Force Portal) presents a DoD PKI certificate that does not chain to a
+  public root, then a CAC-authenticated WebSEAL login. Not reachable by an ordinary client.
+- mypers.af.mil no longer resolves; myPers was retired in April 2023 and replaced by myFSS.
+
+## Public web properties
+
+- [AFRC Official Website](https://www.afrc.af.mil/): Air Force Reserve Command public affairs
+  site — units, news, leadership, policy. Returns 403 to non-browser clients.
+- [Air Force Reserve Recruiting](https://www.airforce.com/ways-to-serve/air-force-reserve):
+  Recruiting overview of Reserve service, career fields, and benefits.
+- [Apply Now](https://www.airforce.com/apply-now): Application entry point for prospective
+  Air Force and Air Force Reserve members.
+- [Frequently Asked Questions](https://www.airforce.com/frequently-asked-questions):
+  Recruiting and service FAQ.
+- [Privacy Policy](https://www.airforce.com/privacy-policy)
+- [Terms and Conditions](https://www.airforce.com/terms-and-conditions)
+- [Accessibility Statement](https://www.airforce.com/accessibility)
+- [AFRC Privacy Policy](https://www.afrc.af.mil/Privacy/): AFRC privacy and security notice.
+- [LinkedIn](https://www.linkedin.com/company/airforcereserverecruiting)
+
+## Authenticated member systems (not open to agents)
+
+- [myFSS](https://myfss.us.af.mil/): Salesforce-hosted force support self-service platform
+  that replaced myPers. Requires DoD credentials.
+- [Air Force Portal](https://www.my.af.mil/): CAC-authenticated portal for active and
+  reserve members.
+
+## Service models documented in this profile
+
+- Traditional Reserve: one weekend per month plus 14 days per year.
+- Active Guard Reserve (AGR): full-time active-duty positions within the Reserve component.
+- Individual Mobilization Augmentee (IMA): reservists augmenting active-duty units.
+- Air Reserve Technician (ART): dual-status civilian/military positions.
+- Palace Chase / Palace Front: active-duty-to-Reserve transition programs.
+- 200+ career fields across aviation, intelligence, cyber, medical and maintenance.
+
+## Repository artifacts (API Evangelist authored, not provider published)
+
+- json-schema/, json-structure/, examples/, json-ld/, vocabulary/: modeling of reserve member,
+  reserve unit and career opportunity entities. Descriptive only — no endpoint serves them.
+- security/air-force-reserve-domain-security.yml: probed TLS/DNSSEC/SPF/DMARC posture.
+- well-known/air-force-reserve-well-known.yml: probe record of /.well-known/ discovery paths.
+- plans/, rate-limits/: honest zeros — no published plans and no published rate limits.
+
+## Related
+
+- The broader Department of the Air Force API and open-data surface is profiled separately at
+  https://apis.io/apis/us-air-force/ — not under AFRC.

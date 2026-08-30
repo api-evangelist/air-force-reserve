@@ -1,0 +1,76 @@
+specification: API Commons Well-Known
+specificationVersion: '0.1'
+provider: Air Force Reserve
+providerId: air-force-reserve
+generated: '2026-08-30'
+method: probed
+source: >-
+  Anonymous HTTPS GETs (browser User-Agent, redirects followed) against every host named in
+  apis.yml on 2026-08-30. No OpenAPI servers[] hosts exist for this provider.
+description: >-
+  Probe record of /.well-known/ discovery documents for the Air Force Reserve web estate.
+  Every path missed. www.afrc.af.mil is behind an Akamai edge policy that answers 403
+  "Access Denied" to our crawler for EVERY path including the site root, so those rows record
+  a refusal, not an absence. www.airforce.com (Air Force Recruiting Service) was fully readable
+  and genuinely serves none of these documents. No WellKnown or SecurityTxt pointer is emitted
+  in apis.yml because no path returned a real document.
+hosts:
+  - host: www.afrc.af.mil
+    note: >-
+      Akamai edge returns 403 "Access Denied" (387-byte HTML) for every path, including "/" and
+      "/robots.txt". This is a refusal of our client, not evidence the documents are absent.
+    documents:
+      - path: /.well-known/security.txt
+        status: 403
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 403
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 403
+        file: null
+      - path: /.well-known/api-catalog
+        status: 403
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 403
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 403
+        file: null
+      - path: /.well-known/agent.json
+        status: 403
+        file: null
+  - host: www.airforce.com
+    note: >-
+      Readable (200 on "/", "/robots.txt" and "/sitemap.xml"). Missing paths return the site's
+      standard 404 page; /.well-known/agent-card.json, /.well-known/agent.json and
+      /.well-known/ai-plugin.json return a bare 404 text body. GET /.well-known/ returns 200 with
+      an HTML shell, which is NOT a document and is recorded as a miss.
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 404
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+        file: null
+      - path: /.well-known/api-catalog
+        status: 404
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 404
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 404
+        file: null
+      - path: /.well-known/agent.json
+        status: 404
+        file: null
+  - host: mypers.af.mil
+    note: >-
+      Host no longer resolves (NXDOMAIN). myPers was retired by AF/A1 in April 2023 and its
+      services migrated to myFSS (myfss.us.af.mil) and MyVector. No paths were probeable.
+    documents: []
