@@ -41,7 +41,7 @@ image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/air-force-
 access: 3rd-Party
 created: '2024-11-21'
 modified: '2026-08-30'
-position: Consumer
+position: Consuming
 description: The Air Force Reserve (AFRC) is the reserve component of the United States Air Force, headquartered at Robins Air Force Base, Georgia. It provides trained units and individuals to be 
   available for active duty in time of war, national emergency, or when otherwise authorized by law. Air Force Reserve members serve part-time, typically one weekend per month and two weeks per year, 
   while maintaining civilian careers. AFRC does not currently provide a public developer API but offers digital recruitment and informational resources.
