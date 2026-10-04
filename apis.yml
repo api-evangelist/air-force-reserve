@@ -2,7 +2,7 @@ aid: air-force-reserve
 url: https://raw.githubusercontent.com/api-evangelist/air-force-reserve/refs/heads/main/apis.yml
 name: Air Force Reserve
 tags:
-  - Federal-Government
+  - Federal Government
   - Military
   - Defense
   - Air Force
@@ -13,6 +13,7 @@ tags_raw:
   - Defense
   - Air Force
   - United States Government
+  - Federal-Government
 type: Index
 deliveryModel:
   model: unknown
@@ -56,7 +57,7 @@ apis:
     - Military
     - Defense
     - Reserve
-    - Federal-Government
+    - Federal Government
     - Recruiting
     tags_raw:
     - Military
@@ -64,6 +65,7 @@ apis:
     - Reserve
     - Federal Government
     - Recruiting
+    - Federal-Government
     humanURL: https://www.afrc.af.mil/
     description: Air Force Reserve Command (AFRC) provides information on reserve programs, career opportunities, unit locations, benefits, and recruiting resources for prospective and current 
       reservists.
