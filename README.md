@@ -1,4 +1,4 @@
-# Air Force Reserve (air-force-reserve)
+# Air Force Reserve
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,99 +66,144 @@
 
 The Air Force Reserve (AFRC) is the reserve component of the United States Air Force, headquartered at Robins Air Force Base, Georgia. It provides trained units and individuals to be available for active duty in time of war, national emergency, or when otherwise authorized by law. Air Force Reserve members serve part-time, typically one weekend per month and two weeks per year, while maintaining civilian careers. AFRC does not currently provide a public developer API but offers digital recruitment and informational resources.
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/air-force-reserve/refs/heads/main/apis.yml)
+**Areas:** Federal Government · Military · Defense · Air Force · United States Government
 
-**Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=company-api-evangelist&utm_content=repo)
+## Air Force Reserve on APIs.io
 
-## Tags:
+Everything profiled for Air Force Reserve is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/air-force-reserve/](https://apis.io/providers/air-force-reserve/)** — or go straight to one of the APIs or properties below.
 
- - Federal Government, Military, Defense, Air Force, United States Government
+### APIs (1)
 
-## Timestamps
+- [Air Force Reserve Command](https://apis.io/apis/air-force-reserve/afrc/) — Air Force Reserve Command (AFRC) provides information on reserve programs, career opportunities, unit locations, benefits, and recruiting resources for…
 
-- **Created:** 2024-11-21
-- **Modified:** 2026-04-19
+### Published properties
 
-## APIs
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-### Air Force Reserve Command
-Air Force Reserve Command (AFRC) provides information on reserve programs, career opportunities, unit locations, benefits, and recruiting resources for prospective and current reservists.
+#### JSON Schema (3)
 
-**Human URL:** [https://www.afrc.af.mil/](https://www.afrc.af.mil/)
+The data models the API reads and writes.
 
-#### Tags:
+- [CareerOpportunity](https://apis.io/schemas/air-force-reserve/afrc-career-opportunity/)
+- [ReserveMember](https://apis.io/schemas/air-force-reserve/afrc-reserve-member/)
+- [ReserveUnit](https://apis.io/schemas/air-force-reserve/afrc-reserve-unit/)
 
- - Military, Defense, Reserve, Federal Government, Recruiting
+#### JSON Structure (3)
 
-#### Properties
+Data models expressed in JSON Structure.
 
-- [Air Force Reserve Overview](https://www.airforce.com/ways-to-serve/air-force-reserve)
-- [AFRC Official Website](https://www.afrc.af.mil/)
-- [Application Portal](https://www.airforce.com/apply-now)
-- [myPers Personnel System](https://mypers.af.mil/)
+- [Afrc Career Opportunity Structure](https://apis.io/json-structure/air-force-reserve/afrc-career-opportunity-structure/)
+- [Afrc Reserve Member Structure](https://apis.io/json-structure/air-force-reserve/afrc-reserve-member-structure/)
+- [Afrc Reserve Unit Structure](https://apis.io/json-structure/air-force-reserve/afrc-reserve-unit-structure/)
 
-## Common Properties
+#### JSON-LD (1)
 
-- [AFRC Official Website](https://www.afrc.af.mil/)
-- [Air Force Reserve Recruiting](https://www.airforce.com/ways-to-serve/air-force-reserve)
-- [myPers Personnel System](https://mypers.af.mil/)
-- [Air Force Portal](https://www.my.af.mil/)
-- [AFRC Privacy Policy](https://www.afrc.af.mil/Privacy/)
+Linked-data contexts for the provider's vocabulary.
 
-## Features
+- [Afrc Context](https://apis.io/jsonld/air-force-reserve/afrc-context/)
 
-| Name | Description |
-|------|-------------|
-| Traditional Reserve Service | Part-time service obligation of one weekend per month and 14 days per year with full access to Air Force training and benefits. |
-| Active Guard Reserve (AGR) | Full-time active-duty positions within the Reserve component with all active-duty benefits. |
-| Individual Mobilization Augmentee (IMA) | Reserve positions augmenting active-duty units during contingencies and deployments. |
-| Air Reserve Technician (ART) | Dual-status civilian/military positions serving as both federal civil servant and reserve member. |
-| 200+ Career Fields | Over 200 career specialties available across aviation, intelligence, cyber, medical, maintenance, and many other fields. |
-| Educational Benefits | Reserve Educational Assistance Program (REAP), GI Bill benefits, and tuition assistance for qualifying reservists. |
-| Palace Chase/Front Programs | Transition programs allowing active-duty airmen to transfer to the Reserve component. |
-| Healthcare Benefits | Access to TRICARE Reserve Select healthcare coverage for qualifying Reserve members and families. |
+#### Vocabulary (1)
 
-## Use Cases
+The provider's domain terms, defined.
 
-| Name | Description |
-|------|-------------|
-| Reserve Recruiting | Connect prospective members with available Air Force Reserve career opportunities and units. |
-| Active Duty Transition | Support active-duty airmen transitioning to Reserve status via Palace Chase/Front programs. |
-| Unit Deployment Support | Provide trained reserve units and individuals to augment active-duty missions during contingencies. |
-| Cyber and Intelligence Missions | Reserve cyber squadrons and intelligence units supporting national security missions part-time. |
+- [Afrc Vocabulary](https://apis.io/vocabularies/air-force-reserve/afrc-vocabulary/)
 
-## Artifacts
+#### Examples (3)
 
-Machine-readable schema specifications organized by format.
+Example requests and responses.
 
-### JSON Schema
+- [Afrc Career Opportunity Example](https://apis.io/examples/air-force-reserve/afrc-career-opportunity-example/)
+- [Afrc Reserve Member Example](https://apis.io/examples/air-force-reserve/afrc-reserve-member-example/)
+- [Afrc Reserve Unit Example](https://apis.io/examples/air-force-reserve/afrc-reserve-unit-example/)
 
-- [afrc-career-opportunity-schema.json](json-schema/afrc-career-opportunity-schema.json)
-- [afrc-reserve-member-schema.json](json-schema/afrc-reserve-member-schema.json)
-- [afrc-reserve-unit-schema.json](json-schema/afrc-reserve-unit-schema.json)
+#### Governance rules (1)
 
-### JSON Structure
+Spectral rulesets for the provider's contracts.
 
-- [afrc-career-opportunity-structure.json](json-structure/afrc-career-opportunity-structure.json)
-- [afrc-reserve-member-structure.json](json-structure/afrc-reserve-member-structure.json)
-- [afrc-reserve-unit-structure.json](json-structure/afrc-reserve-unit-structure.json)
+- [Air Force Reserve — jsonschema rules](https://apis.io/rules/air-force-reserve/air-force-reserve-jsonschema-spectral-rules/)
 
-### JSON-LD
+#### Security (1)
 
-- [afrc-context.jsonld](json-ld/afrc-context.jsonld)
+Authentication, trust centre, and vulnerability disclosure.
 
-### Examples
+- [Air Force Reserve Domain Security](https://apis.io/security/air-force-reserve/air-force-reserve-domain-security/)
 
-- [afrc-career-opportunity-example.json](examples/afrc-career-opportunity-example.json)
-- [afrc-reserve-member-example.json](examples/afrc-reserve-member-example.json)
-- [afrc-reserve-unit-example.json](examples/afrc-reserve-unit-example.json)
+#### Plans and pricing (1)
 
-## Vocabulary
+Published plans, tiers and prices.
 
-- [Air Force Reserve Vocabulary](vocabulary/afrc-vocabulary.yaml) — Taxonomy mapping 3 resources, 5 actions, and 2 personas across military personnel and career domains
+- [Air Force Reserve Plans Pricing](https://apis.io/plans/air-force-reserve/air-force-reserve-plans-pricing/)
 
-## Maintainers
+#### Rate limits (1)
 
-**FN:** Kin Lane
+Published request limits.
 
-**Email:** kin@apievangelist.com
+- [Air Force Reserve Rate Limits](https://apis.io/rate-limits/air-force-reserve/air-force-reserve-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Air Force Reserve Finops](https://apis.io/finops/air-force-reserve/air-force-reserve-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.afrc.af.mil/)
+- [Support](https://www.airforce.com/frequently-asked-questions)
+- [Terms of service](https://www.airforce.com/terms-and-conditions)
+- [Privacy policy](https://www.afrc.af.mil/Privacy/)
+
+## API Evangelist rating
+
+**Kin Score 19.1** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 64.3 |
+| Contract quality | 6.7 |
+| Contract governance | 9.8 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 23.8 |
+| Access clarity | 21.1 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 18.6** — Government & Public Sector
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/air-force-reserve/](https://apis.io/providers/air-force-reserve/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Air Force Reserve: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/air-force-reserve/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
